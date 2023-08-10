@@ -1,4 +1,4 @@
-let words = ["testOne, testTwo, testThree, testFour"];
+let words = ["testOne", "testTwo", "testThree", "testFour"];
 
 let game = {
     currentWord: "",
