@@ -1,0 +1,14 @@
+body {
+}
+
+h1 {
+
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
