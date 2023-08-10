@@ -1,14 +1,34 @@
 body {
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
 
 }
 
-.container {
+.game_area{
     position: relative;
     width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.letters{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 3px;
+    margin: 3px;
+}
+
+.header {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
