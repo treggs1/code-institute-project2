@@ -19,6 +19,8 @@ function startGame() {
 }
 
 function getWord() {
-    let gameWord = Math.random() * 4;
-    console.log(gameWord);
+    let num = Math.floor(Math.random() * 4);
+    game.currentWord = words[num];
+    console.log(game.currentWord);
+    console.log(num);
 }
