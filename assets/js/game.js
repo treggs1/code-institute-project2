@@ -7,6 +7,8 @@ const game = {
     lettersRemaining: 0,
 };
 
+let wordOut = document.querySelector(".current_word");
+
 const sButton = document.querySelector("button");
 sButton.addEventListener("click", startGame);
 
@@ -16,6 +18,7 @@ function startGame() {
     game.currentWordArray = "";
     game.lettersremaining = 0;
     getWord();
+    createPuzzle();
 }
 
 function getWord() {
@@ -23,4 +26,10 @@ function getWord() {
     game.currentWord = words[num];
     console.log(game.currentWord);
     console.log(num);
+    game.currentWordArray = game.currentWord.split("");
+    console.log(game.currentWordArray);
+}
+
+function createPuzzle() {
+    wordOut.textContent = game.currentWord;
 }
