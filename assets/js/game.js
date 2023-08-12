@@ -30,6 +30,27 @@ function getWord() {
     console.log(game.currentWordArray);
 }
 
+function createPuzzleElements(elementType, parentEl, output, cls) {
+    const temp = document.createElement(elementType);
+    temp.classList.add(cls);
+    parentEl.append(temp);
+    temp.textContent = output;
+    return temp;
+}
+
 function createPuzzle() {
-    wordOut.textContent = game.currentWord;
+    wordOut.innerHTML = "";
+    game.currentWordArray.forEach((letr) => {
+        let div = createPuzzleElements("div", wordOut, "-", "puzzle_letters");
+        if (letr == " ") {
+            div.style.borderColor = "white";
+            div.textContent = " ";
+        } else {
+            game.lettersRemaining++;
+        }
+        game.currentWordArray.push(div);
+        //update total
+        console.log(game.currentWordArray);
+    });
+
 }
