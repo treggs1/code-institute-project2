@@ -19,8 +19,16 @@ function startGame() {
     game.lettersremaining = 0;
     getWord();
     createPuzzle();
+    setEventLis();
 }
-
+/* 
+function setEventLis() {
+    let elements = document.querySelectorAll("#lettrs");
+    elements.forEach((item) => {
+        item.addEventListener('click', checker())
+    });
+}    
+*/
 function getWord() {
     let num = Math.floor(Math.random() * 4);
     game.currentWord = words[num];
@@ -53,4 +61,11 @@ function createPuzzle() {
         console.log(game.currentWordArray);
     });
 
+}
+
+function checker(element, checkLett) {
+    element.classList.remove("letter_norm");
+    element.classList.add("letters_correct");
+    console.log(checkLett);
+    console.log(element);
 }
