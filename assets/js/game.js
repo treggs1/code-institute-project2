@@ -64,7 +64,7 @@ function createPuzzle() {
 }
 
 function checker(element, checkLett) {
-    element.classList.remove("letter_norm");
+    element.classList.remove("letters_norm");
     element.classList.add("letters_correct");
     console.log(checkLett);
     console.log(element);
