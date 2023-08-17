@@ -8,8 +8,8 @@ const game = {
     lettersRemaining: 0,
 };
 
-let wordOut = document.querySelector(".current_word");
-
+const wordOut = document.querySelector(".current_word");
+const scoreOut = document.querySelector(".score");
 const sButton = document.querySelector("button");
 sButton.addEventListener("click", startGame);
 
@@ -19,11 +19,13 @@ sButton.addEventListener("click", startGame);
 function startGame() {
     console.log("testOutput");
     game.currentWord = "";
+    game.currentSolution = "";
     game.currentWordArray = [];
-    game.lettersremaining = 0;
+    game.lettersRemaining = 0;
     getWord();
     createPuzzle();
     setEventLis();
+    updateScore();
 }
  
 /**
@@ -31,6 +33,7 @@ function startGame() {
  */
 function setEventLis() {
     let elements = document.querySelectorAll("#lettrs");
+    
     elements.forEach((item) => {
         item.addEventListener('click', function() {
             checker(item, item.textContent);
@@ -96,6 +99,8 @@ function checker(element, checkLett) {
         if (lett.toUpperCase() === checkLett) {
             game.currentWordArray[index].textContent = checkLett;
             isCorrect = true;
+            game.lettersRemaining--;
+            updateScore();
         }
     });
 
@@ -110,4 +115,12 @@ function checker(element, checkLett) {
     console.log(element);
     console.log(game.currentWordArray);
     console.log(wordOut);
+    console.log(game.lettersRemaining);
+}
+
+/**
+ * Function to update score to user
+ */
+function updateScore() {
+    scoreOut.textContent = `Letters Left: ${game.lettersRemaining}`;
 }
