@@ -1,4 +1,4 @@
-let words = ["testOne", "testTwo", "testThree", "testFour"];
+let words = ["testOne", "testTwo", "test Three", "testFour"];
 
 const game = {
     currentWord: "",
@@ -13,6 +13,9 @@ let wordOut = document.querySelector(".current_word");
 const sButton = document.querySelector("button");
 sButton.addEventListener("click", startGame);
 
+/**
+ * Function resets variables and starts game
+ */
 function startGame() {
     console.log("testOutput");
     game.currentWord = "";
@@ -23,6 +26,9 @@ function startGame() {
     setEventLis();
 }
  
+/**
+ * Function sets up event listeners on the letter divs for user input
+ */
 function setEventLis() {
     let elements = document.querySelectorAll("#lettrs");
     elements.forEach((item) => {
@@ -32,6 +38,10 @@ function setEventLis() {
     });
 }    
 
+/**
+ * Function randomly selects word from array and creates an array of the 
+ * letters making up the word
+ */
 function getWord() {
     let num = Math.floor(Math.random() * 4);
     game.currentWord = words[num];
@@ -41,6 +51,7 @@ function getWord() {
     console.log(game.currentSolution);
 }
 
+
 function createPuzzleElements(elementType, parentEl, output, cls) {
     const temp = document.createElement(elementType);
     temp.classList.add(cls);
@@ -49,6 +60,10 @@ function createPuzzleElements(elementType, parentEl, output, cls) {
     return temp;
 }
 
+/**
+ * Function creates the output of the word that the user will see and calculates the 
+ * total letters for the user
+ */
 function createPuzzle() {
     wordOut.innerHTML = "";
     game.currentSolution.forEach((letr) => {
@@ -62,10 +77,17 @@ function createPuzzle() {
         game.currentWordArray.push(div);
         //update total
         console.log(game.currentWordArray);
+        console.log(game.lettersRemaining);
     });
 
 }
 
+/**
+ * Function checks the user input against the current word to see if the guess is correct
+ * and updates the current word output viewed by the user if the guess is correct, it also 
+ * updates the user input letters to highlight that the letter was already clicked and wether
+ * it was a correct guess or not.
+ */
 function checker(element, checkLett) {
     let isCorrect = false;
     
