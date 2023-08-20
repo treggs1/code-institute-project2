@@ -6,6 +6,7 @@ const game = {
     currentWordArray: [],
     letterElements: [],
     lettersRemaining: 0,
+    clickHandlers: [],
 };
 
 const wordOut = document.querySelector(".current_word");
@@ -22,6 +23,8 @@ function startGame() {
     game.currentSolution = "";
     game.currentWordArray = [];
     game.lettersRemaining = 0;
+    resetClass();
+    removeEventLis();
     getWord();
     createPuzzle();
     setEventLis();
@@ -29,17 +32,41 @@ function startGame() {
 }
  
 /**
+ * Function sets up click handler for event listeners on letters
+ */
+function letterClickHandler(item) {
+    return function() {
+        checker(item, item.textContent);
+    };
+}
+
+/**
  * Function sets up event listeners on the letter divs for user input
  */
 function setEventLis() {
     let elements = document.querySelectorAll("#lettrs");
     
     elements.forEach((item) => {
-        item.addEventListener('click', function() {
-            checker(item, item.textContent);
-        });
+        const handler = letterClickHandler(item);
+        game.clickHandlers.push(handler); // store click handler reference so it can be removed to reset game
+        item.addEventListener('click', handler);
     });
-}    
+}
+
+/**
+ * Function removes event listeners on the letter divs so we dont have multiple of the
+ * same event listeners which would mess up score calculations
+ */
+function removeEventLis() {
+    let elements = document.querySelectorAll("#lettrs");
+    if (game.clickHandlers.length > 0) {
+    elements.forEach((item, index) => {
+        item.removeEventListener('click', game.clickHandlers[index]);
+    });
+
+    // Clear the array of handler references
+    game.clickHandlers = [];
+}}
 
 /**
  * Function randomly selects word from array and creates an array of the 
@@ -83,6 +110,21 @@ function createPuzzle() {
         console.log(game.lettersRemaining);
     });
 
+}
+
+/**
+ * Function to reset letter classes back to default
+ */
+function resetClass() {
+    let elements = document.querySelectorAll("#lettrs");
+
+    elements.forEach((element) => {
+        element.classList.remove('letters_wrong');
+        element.classList.remove('letters_correct');
+        element.classList.remove('letters_norm');
+        element.classList.add('letters_norm');
+      });
+    
 }
 
 /**
