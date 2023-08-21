@@ -6,6 +6,7 @@ const game = {
     currentWordArray: [],
     letterElements: [],
     lettersRemaining: 0,
+    guessesRemaining: 10,
     clickHandlers: [],
 };
 
@@ -23,6 +24,7 @@ function startGame() {
     game.currentSolution = "";
     game.currentWordArray = [];
     game.lettersRemaining = 0;
+    game.guessesRemaining = 10;
     resetClass();
     removeEventLis();
     getWord();
@@ -142,7 +144,6 @@ function checker(element, checkLett) {
             game.currentWordArray[index].textContent = checkLett;
             isCorrect = true;
             game.lettersRemaining--;
-            updateScore();
         }
     });
 
@@ -152,7 +153,9 @@ function checker(element, checkLett) {
     } else {
         element.classList.remove("letters_norm");
         element.classList.add("letters_wrong");
+        game.guessesRemaining--;
     }
+    updateScore();
     console.log(checkLett);
     console.log(element);
     console.log(game.currentWordArray);
@@ -164,5 +167,6 @@ function checker(element, checkLett) {
  * Function to update score to user
  */
 function updateScore() {
-    scoreOut.textContent = `Letters Left: ${game.lettersRemaining}`;
+    scoreOut.innerHTML = `<p>Letters Remaining: ${game.lettersRemaining}</p>
+    <p>Guesses Remaining: ${game.guessesRemaining}</p>`;
 }
