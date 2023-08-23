@@ -11,6 +11,7 @@ const game = {
 };
 
 const wordOut = document.querySelector(".current_word");
+const hangmanImage = document.querySelector(".hangman_image");
 const scoreOut = document.querySelector(".score");
 const sButton = document.querySelector("button");
 sButton.addEventListener("click", startGame);
@@ -111,6 +112,7 @@ function createPuzzle() {
         console.log(game.currentWordArray);
         console.log(game.lettersRemaining);
     });
+    hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg">`;
 
 }
 
@@ -154,6 +156,7 @@ function checker(element, checkLett) {
         element.classList.remove("letters_norm");
         element.classList.add("letters_wrong");
         game.guessesRemaining--;
+        hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg">`;
     }
     updateScore();
     console.log(checkLett);
