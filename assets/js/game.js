@@ -160,6 +160,12 @@ function checker(element, checkLett) {
         gameOver();
         removeEventLis();
     }
+
+    // code to activate remove letter event listeners when puzzle is complete
+    if(game.lettersRemaining <= 0){
+        youWin();
+        removeEventLis();
+    }
     updateScore();
     console.log(checkLett);
     console.log(element);
@@ -189,5 +195,13 @@ function instructions() {
  */
 function gameOver() {
     var popup = document.getElementById("game_over");
+    popup.classList.toggle("show");
+  }
+
+  /**
+ * Function for gameover popup from https://www.w3schools.com/howto/howto_js_popup.asp
+ */
+function youWin() {
+    var popup = document.getElementById("you_win");
     popup.classList.toggle("show");
   }
