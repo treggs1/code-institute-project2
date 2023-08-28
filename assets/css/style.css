@@ -26,8 +26,8 @@ h1 {
 
 .puzzle_letters {
     display: inline-block;
-    width: 30px;
     font-size: 1.5em;
+    padding: 1px;
 }
 
 button {
