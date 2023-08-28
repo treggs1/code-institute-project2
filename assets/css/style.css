@@ -2,10 +2,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 {
-
-}
-
+/* CSS for game area content */
 .game_area{
     position: relative;
     width: 500px;
@@ -16,17 +13,21 @@ h1 {
     border-radius: 10px;
 }
 
-.puzzle_letters {
-    display: inline-block;
-    width: 30px;
-    font-size: 1.5em;
-}
-
-.letters{
+.header {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+h1 {
+
+}
+
+.puzzle_letters {
+    display: inline-block;
+    width: 30px;
+    font-size: 1.5em;
 }
 
 button {
@@ -35,15 +36,16 @@ button {
     margin: 3px;
 }
 
-.header {
+.current_word {
+    font-size: 2rem;
+}
+
+/* CSS for letter inputs */
+.letters{
     position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.current_word {
-    font-size: 2rem;
 }
 
 .letters_norm {
