@@ -154,6 +154,12 @@ function checker(element, checkLett) {
         game.guessesRemaining--;
         hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg">`;
     }
+
+    // code to activate gameOver function and remove letter event listeners when 0 guesses remaining
+    if(game.guessesRemaining <= 0){
+        gameOver();
+        removeEventLis();
+    }
     updateScore();
     console.log(checkLett);
     console.log(element);
