@@ -13,7 +13,7 @@ const game = {
 const wordOut = document.querySelector(".current_word");
 const hangmanImage = document.querySelector(".hangman_image");
 const scoreOut = document.querySelector(".score");
-const sButton = document.querySelector("button");
+const sButton = document.querySelector(".button");
 sButton.addEventListener("click", startGame);
 
 /**
@@ -47,7 +47,7 @@ function letterClickHandler(item) {
  * Function sets up event listeners on the letter divs for user input
  */
 function setEventLis() {
-    let elements = document.querySelectorAll("#lettrs");
+    let elements = document.querySelectorAll(".lettrs");
     
     elements.forEach((item) => {
         const handler = letterClickHandler(item);
@@ -61,7 +61,7 @@ function setEventLis() {
  * same event listeners which would mess up score calculations
  */
 function removeEventLis() {
-    let elements = document.querySelectorAll("#lettrs");
+    let elements = document.querySelectorAll(".lettrs");
     if (game.clickHandlers.length > 0) {
     elements.forEach((item, index) => {
         item.removeEventListener('click', game.clickHandlers[index]);
@@ -120,7 +120,7 @@ function createPuzzle() {
  * Function to reset letter classes back to default
  */
 function resetClass() {
-    let elements = document.querySelectorAll("#lettrs");
+    let elements = document.querySelectorAll(".lettrs");
 
     elements.forEach((element) => {
         element.classList.remove('letters_wrong');
