@@ -169,3 +169,19 @@ function updateScore() {
     scoreOut.innerHTML = `<p>Letters Remaining: ${game.lettersRemaining}</p>
     <p>Guesses Remaining: ${game.guessesRemaining}</p>`;
 }
+
+/**
+ * Function for instructions popup from https://www.w3schools.com/howto/howto_js_popup.asp
+ */
+function instructions() {
+    var popup = document.getElementById("instructions");
+    popup.classList.toggle("show");
+  }
+
+/**
+ * Function for gameover popup from https://www.w3schools.com/howto/howto_js_popup.asp
+ */
+function gameOver() {
+    var popup = document.getElementById("game_over");
+    popup.classList.toggle("show");
+  }
