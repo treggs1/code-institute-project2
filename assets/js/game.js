@@ -1,4 +1,4 @@
-let words = ["testOne", "testTwo", "test Three", "testFour"];
+let words = ["testOne", "testTwo", "testThree", "testFour"];
 
 const game = {
     currentWord: "",
@@ -26,6 +26,7 @@ function startGame() {
     game.currentWordArray = [];
     game.lettersRemaining = 0;
     game.guessesRemaining = 10;
+    sButton.textContent = 'Restart Game';
     resetClass();
     removeEventLis();
     getWord();
@@ -101,12 +102,7 @@ function createPuzzle() {
     wordOut.innerHTML = "";
     game.currentSolution.forEach((letr) => {
         let div = createPuzzleElements("div", wordOut, "-", "puzzle_letters");
-        if (letr == " ") {
-            div.style.borderColor = "white";
-            div.textContent = " ";
-        } else {
-            game.lettersRemaining++;
-        }
+        game.lettersRemaining++;
         game.currentWordArray.push(div);
         //update total
         console.log(game.currentWordArray);
