@@ -1,5 +1,5 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 /* CSS for game area content */
@@ -22,6 +22,7 @@ body {
 }
 
 h1 {
+    font-family: 'Oswald', sans-serif;
     font-size: 2rem;
 }
 
@@ -34,6 +35,7 @@ h1 {
 }
 
 .puzzle_letters {
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     font-size: 1.5em;
     padding: 1px;
@@ -51,6 +53,7 @@ button {
 
 /* CSS for letter inputs */
 .letters{
+    font-family: 'Oswald', sans-serif;
     position: relative;
     margin-left: auto;
     margin-right: auto;
