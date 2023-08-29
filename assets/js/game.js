@@ -198,6 +198,10 @@ function instructions() {
  */
 function gameOver() {
     var popup = document.getElementById("game_over");
+    popup.innerHTML = `<p>Oops! You've run out of guesses. The word was ${game.currentWord}.
+    Better luck next time.</p>
+    <button class="new_game" onclick="startGame(); gameOver()">New Game</button>
+    <button class="exit" onclick="gameOver()">Exit</button>`;
     popup.classList.toggle("show");
   }
 
