@@ -104,18 +104,21 @@ button {
   /* The actual popup (appears on top) */
   .popuptext {
     visibility: hidden;
-    width: 210px;
+    width: 300px;
+    max-height: 600px;
+    min-height: 200px;
     padding: 5px;
     background-color: #555;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1rem;
+    overflow-y: auto;
   }
   
   /* Popup arrow */
