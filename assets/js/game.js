@@ -1,5 +1,7 @@
+//Array of the words used in game
 let words = ["testOne", "testTwo", "testThree", "testFour"];
 
+// game object to contain variables and make it easier to reset everything
 const game = {
     currentWord: "",
     currentSolution: "",
@@ -10,6 +12,7 @@ const game = {
     clickHandlers: [],
 };
 
+// Query selectors for use in functions
 const wordOut = document.querySelector(".current_word");
 const hangmanImage = document.querySelector(".hangman_image");
 const scoreOut = document.querySelector(".score");
