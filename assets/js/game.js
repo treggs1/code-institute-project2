@@ -56,6 +56,8 @@ function setEventLis() {
     elements.forEach((item) => {
         const handler = letterClickHandler(item);
         game.clickHandlers.push(handler); // store click handler reference so it can be removed to reset game
+        // store handler function as a property of the handler so it can be used to remove the handler when a letter is clicked
+        item.clickHandler = handler; 
         item.addEventListener('click', handler);
     });
 }
@@ -157,6 +159,9 @@ function checker(element, checkLett) {
         game.guessesRemaining--;
         hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg">`;
     }
+
+    // Remove event listener when a letter is clicked
+    element.removeEventListener('click', element.clickHandler);
 
     // code to activate gameOver function and remove letter event listeners when 0 guesses remaining
     if(game.guessesRemaining <= 0){
