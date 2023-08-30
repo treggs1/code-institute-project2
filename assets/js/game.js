@@ -186,8 +186,8 @@ function checker(element, checkLett) {
  * Function to update score to user
  */
 function updateScore() {
-    scoreOut.innerHTML = `<p>Letters Remaining: ${game.lettersRemaining}</p>
-    <p>Guesses Remaining: ${game.guessesRemaining}</p>`;
+    scoreOut.innerHTML = `<p>Letters Remaining: ${game.lettersRemaining}<br>
+    Guesses Remaining: ${game.guessesRemaining}</p>`;
 }
 
 /**
