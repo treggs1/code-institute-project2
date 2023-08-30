@@ -109,7 +109,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ![screenshot](documentation/features/instructions-popup.png)
 
-**Game status feedback**
+- **Game status feedback**
 
     - The game status feedback shows the user how many letters still need to be solved and how many guesses they have remaining.
 
@@ -121,25 +121,25 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ![screenshot](documentation/features/hangman-image.png)
 
- **Hangman puzzle output**
+- **Hangman puzzle output**
 
     - The hangman puzzle output shows a dash for each letter in the puzzle and upon a correct guess the dash is change into the correct letter.
 
 ![screenshot](documentation/features/puzzle-output.png)
 
-**Letter Inputs**
+- **Letter Inputs**
 
     - The letter inputs are for the user to select which letter they are guessing, if it is a correct guess the letter background will change to green and the letter will be revealed in the puzzle however, if the guess is incorrect the letter background will turn red.
 
 ![screenshot](documentation/features/letter-inputs.png)
 
-**You win popup**
+- **You win popup**
 
     - The you win popup alerts the user that they have completed the puzzle and gives them an option of restarting the game with a new random word or exiting the popup.
 
 ![screenshot](documentation/features/youwin.png)
 
-**Game over popup**
+- **Game over popup**
 
     - The game over popup alerts the user that they have run out of guesses and the game is over it also reveals the word to them and gives them the option of restarting the game with a new random word or exiting the popup.
 
