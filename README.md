@@ -22,7 +22,7 @@ Explain your colours and the colour scheme.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- `#000000` used for primary text.
+- `#0e1414` used for text, headings and borders in the game area.
 - `#E84610` used for primary highlights.
 - `#4A4A4F` used for secondary text.
 - `#009FE3` used for secondary highlights.
