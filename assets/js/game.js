@@ -199,7 +199,7 @@ function instructions() {
   }
 
 /**
- * Function for gameover popup from https://www.w3schools.com/howto/howto_js_popup.asp
+ * Function for gameOver popup from https://www.w3schools.com/howto/howto_js_popup.asp
  */
 function gameOver() {
     var popup = document.getElementById("game_over");
@@ -211,7 +211,7 @@ function gameOver() {
   }
 
   /**
- * Function for gameover popup from https://www.w3schools.com/howto/howto_js_popup.asp
+ * Function for youWin popup from https://www.w3schools.com/howto/howto_js_popup.asp
  */
 function youWin() {
     var popup = document.getElementById("you_win");
