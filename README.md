@@ -82,9 +82,9 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](documentation/wireframes/wireframe-mobile.png) |
+| Tablet | ![screenshot](documentation/wireframes/wireframe-tablet.png) |
+| Desktop | ![screenshot](documentation/wireframes/wireframe-desktop.png) |
 
 ### About Page Wireframes
 
