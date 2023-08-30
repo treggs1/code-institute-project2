@@ -143,7 +143,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
     - The game over popup alerts the user that they have run out of guesses and the game is over it also reveals the word to them and gives them the option of restarting the game with a new random word or exiting the popup.
 
-![screenshot](documentation/features/game-title.png)
+![screenshot](documentation/features/gameover-popup.png)
 
 
 ### Future Features
