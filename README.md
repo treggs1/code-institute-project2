@@ -190,6 +190,11 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
+For help with event listeners and letterClickHandler function:
+- [stackoverflow.com](https://stackoverflow.com/questions/69242724/remove-event-listeners-with-extra-arguments)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [Javascript Beginner To Professional - Published by Packt](https://www.packtpub.com/product/javascript-from-beginner-to-professional/9781800562523#:~:text=JavaScript%20from%20Beginner%20to%20Professional%20focuses%20on%20key%20programming%20concepts,with%20asynchronous%20and%20concurrent%20code.)
+
 ### Content
 
 | Source | Location | Notes |
@@ -200,8 +205,8 @@ You can fork this repository by using the following steps:
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
+| [favicon.io](https://favicon.io/) | entire site | image | favicon on all pages |
+| [Marc Oliveras](https://www.oligalma.com/en/downloads/images/hangman) | Game | image | Hangman images used in thee game |
 
 
 ### Acknowledgements
