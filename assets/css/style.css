@@ -109,7 +109,6 @@ button {
     visibility: hidden;
     width: 300px;
     max-height: 600px;
-    min-height: 200px;
     padding: 5px;
     background-color: #555;
     color: #fff;
@@ -117,9 +116,10 @@ button {
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    top: 15%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
+    transform: translatey(-50%);
     font-size: 1rem;
   }
 
