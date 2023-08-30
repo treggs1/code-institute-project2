@@ -55,7 +55,8 @@ function setEventLis() {
     
     elements.forEach((item) => {
         const handler = letterClickHandler(item);
-        game.clickHandlers.push(handler); // store click handler reference so it can be removed to reset game
+        // store click handler reference so it can be removed to reset game
+        game.clickHandlers.push(handler);
         // store handler function as a property of the handler so it can be used to remove the handler when a letter is clicked
         item.clickHandler = handler; 
         item.addEventListener('click', handler);
@@ -90,7 +91,14 @@ function getWord() {
     console.log(game.currentSolution);
 }
 
-
+/**
+ * Function creates and add elements to the DOM the elements are input from the createPuzzle function.
+ * I originally thought I would have to create the letters for the user input also using this 
+ * to make it easier to remove the event listeners from the letter when clicked, as I wanted the letters to always 
+ * be visible on the page and not built when the startGame function I managed to find another way of making it work
+ * but decided to keep this here for future reference instead of merging it with the createPuzzle function.
+ */
+//Function modified from - Javascript Beginner To Professional - Published by Packt
 function createPuzzleElements(elementType, parentEl, output, cls) {
     const temp = document.createElement(elementType);
     temp.classList.add(cls);
@@ -103,6 +111,7 @@ function createPuzzleElements(elementType, parentEl, output, cls) {
  * Function creates the output of the word that the user will see and calculates the 
  * total letters for the user
  */
+//Function modified from - Javascript Beginner To Professional - Published by Packt
 function createPuzzle() {
     wordOut.innerHTML = "";
     game.currentSolution.forEach((letr) => {
