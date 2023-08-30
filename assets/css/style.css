@@ -105,7 +105,7 @@ button {
   }
   */
   /* The actual popup (appears on top) */
-  .popuptext {
+  .popup_text {
     visibility: hidden;
     width: 300px;
     max-height: 600px;
@@ -121,7 +121,6 @@ button {
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;
-    overflow-y: auto;
   }
 
   /* CSS for instructions popup with scroll bar */
