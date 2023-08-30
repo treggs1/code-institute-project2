@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */ // lets jshint know I am using some ES6 syntax
+
 //Array of the words used in game
 let words = ["testOne", "testTwo", "testThree", "testFour"];
 
