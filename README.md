@@ -78,80 +78,73 @@ Instructions on how to do Markdown `tables` start on line #213 on this site: htt
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-### Home Page Wireframes
+### Game Wireframes
 
-| Size | Screenshot |
+| Device | Screenshot |
 | --- | --- |
 | Mobile | ![screenshot](documentation/wireframes/wireframe-mobile.png) |
 | Tablet | ![screenshot](documentation/wireframes/wireframe-tablet.png) |
 | Desktop | ![screenshot](documentation/wireframes/wireframe-desktop.png) |
 
-### About Page Wireframes
 
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
-
-### Contact Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for any addition wireframe pages you have.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-## Features
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+## Structure
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Start Game Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The start button is clicked by the user to begin the game.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/features/startgame-instructions.png)
 
-- **Title for feature #2**
+- **Instructions Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The instructions button is there for the user to get instructions on how to play the game if they need it. When clicked it will open a popup with the instruction.
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/features/startgame-instructions.png)
 
-- **Title for feature #3**
+- **Instructions popup**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The instructions popup contains all the information the user needs to understand how to play the game.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/features/instructions-popup.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+**Game status feedback**
 
-Repeat as necessary for as many features as your site contains.
+    - The game status feedback shows the user how many letters still need to be solved and how many guesses they have remaining.
 
-Hint: the more, the merrier!
+![screenshot](documentation/features/game-status-feedback.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- **Hangman Image**
+
+    - The hangman image provides a visual representation of how the game is progressing.
+
+![screenshot](documentation/features/hangman-image.png)
+
+ **Hangman puzzle output**
+
+    - The hangman puzzle output shows a dash for each letter in the puzzle and upon a correct guess the dash is change into the correct letter.
+
+![screenshot](documentation/features/puzzle-output.png)
+
+**Letter Inputs**
+
+    - The letter inputs are for the user to select which letter they are guessing, if it is a correct guess the letter background will change to green and the letter will be revealed in the puzzle however, if the guess is incorrect the letter background will turn red.
+
+![screenshot](documentation/features/letter-inputs.png)
+
+**You win popup**
+
+    - The you win popup alerts the user that they have completed the puzzle and gives them an option of restarting the game with a new random word or exiting the popup.
+
+![screenshot](documentation/features/youwin.png)
+
+**Game over popup**
+
+    - The game over popup alerts the user that they have run out of guesses and the game is over it also reveals the word to them and gives them the option of restarting the game with a new random word or exiting the popup.
+
+![screenshot](documentation/features/game-title.png)
+
 
 ### Future Features
 
