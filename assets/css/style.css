@@ -1,5 +1,6 @@
 body {
     font-family: 'Source Sans 3', sans-serif;
+    color: #0e1414;
 }
 
 /* CSS for game area content */
@@ -10,7 +11,7 @@ body {
     margin-right: auto;
     padding: 5px;
     text-align: center;
-    border: 2px solid darkslategray;
+    border: 2px solid #0e1414;
     border-radius: 10px;
 }
 
@@ -45,6 +46,7 @@ button {
     font-size: 1.5em;
     padding: 3px;
     margin: 3px;
+    color: #0e1414;
 }
 
 .current_word {
@@ -68,11 +70,12 @@ button {
     width: 30px;
     margin-top: 5px;
     border-radius: 1px;
-    border: 1px solid darkgray;
+    border: 1px solid #0e1414;
+    color: #0e1414;
 }
 
 .letters_norm:hover {
-    background-color: darkgrey;
+    background-color: #a9a9a9;
 }
 
 .letters_correct {
@@ -81,8 +84,8 @@ button {
     width: 30px;
     margin-top: 5px;
     border-radius: 1px;
-    border: 1px solid darkgray;
-    background-color: green;
+    border: 1px solid #0e1414;
+    background-color: #008000;
 }
 
 .letters_wrong {
@@ -91,8 +94,8 @@ button {
     width: 30px;
     margin-top: 5px;
     border-radius: 1px;
-    border: 1px solid darkgray;
-    background-color: red;
+    border: 1px solid #0e1414;
+    background-color: #ff0000;
 }
 
 /* CSS for pop ups from https://www.w3schools.com/howto/howto_js_popup.asp */
@@ -110,8 +113,8 @@ button {
     width: 300px;
     max-height: 600px;
     padding: 5px;
-    background-color: #555;
-    color: #fff;
+    background-color: #555555;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
     position: absolute;
@@ -130,8 +133,8 @@ button {
     max-height: 600px;
     min-height: 200px;
     padding: 5px;
-    background-color: #555;
-    color: #fff;
+    background-color: #555555;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
     position: absolute;
