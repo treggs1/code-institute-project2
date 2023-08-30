@@ -133,6 +133,13 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [JSHint](https://jshint.com/) - used to validate JS code.
+- [W3 HTML validator](https://validator.w3.org/nu/) - used to validate HTML.
+- [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS.
+- [AmIResponsive?](https://ui.dev/amiresponsive?url=https://treggs1.github.io/code-institute-project2/) - used to create AmIResponsive image for README.md
+- [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files.
+- [Coolors](https://coolors.co/) - used to generate a color palette for the site.
+- [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning.
 
 ## Testing
 
