@@ -7,15 +7,12 @@ Our game is designed with accessibility and ease of use in mind. New players wil
 Who is the "Hangman Puzzle Game" for? Everyone! From kids honing their spelling skills to adults relaxing during a break, the "Hangman Puzzle Game" offers an inclusive gaming experience. Parents can bond with their children over word puzzles, and friends can challenge each other to see who can guess the most words. It's a game that bridges generations and creates connections through language.
 
 ![Am I Responsive?](documentation/amiresponsive.png "Am I Responsive? Website Mockup")
+[View Hangman Puzzle Game on Github Pages](https://treggs1.github.io/code-institute-project2/)
 
 
 ## UX
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The Hangman Puzzle Game is designed for accessibility and ease of use, ensuring that both newcomers and word enthusiasts can dive right in.
 
 ### Colour Scheme
 
@@ -45,30 +42,12 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 ![screenshot](documentation/coolors.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- [Oswald](https://fonts.google.com/specimen/Oswald) was used for the primary headers, titles, letter inputs and puzzle output.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3) was used for all other secondary text.
 
 
 ## User Stories
