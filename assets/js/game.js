@@ -96,7 +96,7 @@ function removeEventLis() {
  * letters making up the word
  */
 function getWord() {
-    let num = Math.floor(Math.random() * 4);
+    let num = Math.floor(Math.random() * 62);
     game.currentWord = words[num];
     game.currentSolution = game.currentWord.split("");
 }
