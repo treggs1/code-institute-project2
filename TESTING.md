@@ -97,28 +97,16 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## User Story Testing
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like to understand the basic rules of the Hangman game, so that I can start playing without confusion. | ![screenshot](documentation/features/instructions-popup.png) |
+| As a new site user, I would like to easily start a new game, so that I can test my word guessing skills. | ![screenshot](documentation/features/startgame-instructions.png) |
+| As a new site user, I would like to receive feedback when I guess a letter correctly or incorrectly, so that I can learn from my guesses. | ![screenshot](documentation/features/letter-inputs.png) |
+| As a new site user, I would like to see my progress, including the number of remaining guesses and the letters I've correctly guessed, so that I can strategize my next moves. | ![screenshot](documentation/features/game-status-feedback.png) |
+| As a new site user, I would like to receive clear instructions on how to play the game and how to interact with the user interface. | ![screenshot](documentation/features/instructions-popup.png) |
+| As a returning site user, I would like the option to start a new game easily after completing or exiting a previous game, so that I can continue playing without interruption. | ![screenshot](documentation/features/youwin.png) |
+| As a returning site user, I would like to encounter new words puzzles each time I start a game, so that I can continue to challenge myself. | ![screenshot](documentation/features/game-words.png) |
+
 
 ## Bugs
 
