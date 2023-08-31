@@ -117,7 +117,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home Page | | | | |
 | | Click on Start Game | Starts game generates puzzle output and activates event listeners on letter inputs | Pass | |
 | | Click on Restart Game | Selects random word from array, resets variables to default, removes and reactivates event listeners on letter inputs and resets letter input styles to default | Pass | |
-| | Click Instructions | Brings up instructions popup for the user to read instructions | Pass | |
+| | Click Instructions | Brings up instructions popup for the user to read instructions | Pass | User will have thee option to click Exit and close the popup |
 | | Click Exit on instructions popup | Closes instructions popup and allows user to continue playing the game | Pass | |
 | | Click on letter not in current puzzle | Letter background is changed to red, event listener is removed form that letter, 1 is deducted from guesses remaining and hangman image progresses to next step | Pass | |
 | | Click on letter in current puzzle | Letter background is changed to green, event listener is removed from that letter, letter is reavealed in the correect position or positions if more than one occurence in current puzzle and 1 is deducted for each itteration of that letter in the current puzzle | Pass | |
@@ -125,7 +125,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Game over popup click on New Game | Closes the game over popup, selects random word from array, resets variables to default, removes and reactivates event listeners on letter inputs and resets letter input styles to default | Pass | |
 | | Game over popup click on Exit | Closes game over popup and allows user to review the current state of the game | Pass |  |
 | | Letters Remaining reaches 0 and the puzzle is solved | You Win popup will appear and all letter event listeners are removed | Pass | User will have the option of clicking New Game or Exit on the popup |
-| | You win popup click on New Game | closes the you win popup, selects random word from array, resets variables to default, removes and reactivates event listeners on letter inputs and resets letter input styles to default | Pass | |
+| | You win popup click on New Game | Closes the you win popup, selects random word from array, resets variables to default, removes and reactivates event listeners on letter inputs and resets letter input styles to default | Pass | |
 | | You win popup click on Exit | Closes you win popup and allows user to review the current state of the game | Pass |  |
 
 
