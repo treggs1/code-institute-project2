@@ -156,43 +156,8 @@ from the respective feature.
 
 ## Bugs
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- The only real issue I had was at first when the event listeners on the letters would multiply every time I restarted the game. So, let's say I restarted the game once and clicked a correct letter. It appeared in the puzzle one time, but it would remove two from the letters remaining. If it was incorrect, it would remove two from the guesses remaining, ending the game prematurely. This effect would multiply every time I restarted the game.
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+This took a lot of figuring out, and there wasn't a single resource I could find to solve the issue. I had to piece it together from reading multiple posts on stackoverflow.com. The most helpful post was https://stackoverflow.com/questions/69242724/remove-event-listeners-with-extra-arguments. I also used a book called 'JavaScript Beginner To Professional,' published by Packt, and developer.mozilla.org to help me understand some of the syntax I was unfamiliar with.
 
-For JavaScript and Python applications, it's best to screenshot the errors to include them as well.
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
-
-    ![screenshot](documentation/bug01.png)
-
-    - To fix this, I _____________________.
-
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
-
-    ![screenshot](documentation/bug02.png)
-
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
+Through this process, I learned how to create an event handler function to generate an array that could later be iterated through to remove the event listeners. This approach also made it easier to remove the event listener from specific letters when they were clicked, preventing them from being clicked again and disrupting the game variables, which would otherwise lead to an early end of the game.
