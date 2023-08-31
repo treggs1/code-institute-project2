@@ -101,8 +101,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | 1 warning for images with low resolution and PWA warnings |
+| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Only PWA warnings |
 
 ## Defensive Programming
 
