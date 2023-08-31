@@ -124,7 +124,7 @@ function createPuzzle() {
         console.log(game.currentWordArray);
         console.log(game.lettersRemaining);
     });
-    hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg">`;
+    hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg" width="200" height="350" alt="Hangman game images">`;
 
 }
 
