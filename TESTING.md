@@ -12,7 +12,7 @@ In this section, I will present proof to demonstrate that:
 
 I have decided to do manual testing only for this project to save time. Since the only user input involves clicking on letter inputs or buttons, all of which have fixed tasks, manual testing is easy to perform. While creating functions, I used console logs to observe how the functions were affecting the game variables. Given the nature of this project and the limited user interactions, I believe that manual testing was sufficient. If this were a larger project with more varied user input, I would have also implemented automated testing.
 
-### A brief description of manual and automatic testing
+### A brief description of automatic and manual testing
 
 **Automated Testing** uses scripts and tools to run tests on software. It's efficient for repetitive tasks, offers consistent results, and covers a wide range of scenarios. Best for regression testing, frequent code changes, and rapid feedback.
 
