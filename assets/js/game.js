@@ -37,7 +37,6 @@ sButton.addEventListener("click", startGame);
  * Function resets variables and starts game
  */
 function startGame() {
-    console.log("testOutput");
     game.currentWord = "";
     game.currentSolution = "";
     game.currentWordArray = [];
@@ -99,10 +98,7 @@ function removeEventLis() {
 function getWord() {
     let num = Math.floor(Math.random() * 4);
     game.currentWord = words[num];
-    console.log(game.currentWord);
-    console.log(num);
     game.currentSolution = game.currentWord.split("");
-    console.log(game.currentSolution);
 }
 
 /**
@@ -132,9 +128,6 @@ function createPuzzle() {
         let div = createPuzzleElements("div", wordOut, "-", "puzzle_letters");
         game.lettersRemaining++;
         game.currentWordArray.push(div);
-        //update total
-        console.log(game.currentWordArray);
-        console.log(game.lettersRemaining);
     });
     hangmanImage.innerHTML = `<img src="assets/images/hangman-${game.guessesRemaining}.jpg" width="200" height="350" alt="Hangman game images">`;
 
@@ -198,11 +191,6 @@ function checker(element, checkLett) {
         removeEventLis();
     }
     updateScore();
-    console.log(checkLett);
-    console.log(element);
-    console.log(game.currentWordArray);
-    console.log(wordOut);
-    console.log(game.lettersRemaining);
 }
 
 /**
