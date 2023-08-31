@@ -206,7 +206,7 @@ For help with event listeners and letterClickHandler function:
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [favicon.io](https://favicon.io/) | entire site | image | favicon on all pages |
-| [Marc Oliveras](https://www.oligalma.com/en/downloads/images/hangman) | Game | image | Hangman images used in thee game |
+| [Marc Oliveras](https://www.oligalma.com/en/downloads/images/hangman) | Game | image | Hangman images used in the game |
 
 
 ### Acknowledgements
