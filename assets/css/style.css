@@ -102,13 +102,6 @@ button {
 
 /* CSS for pop ups from https://www.w3schools.com/howto/howto_js_popup.asp */
 
-/* Popup container 
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  */
   /* The actual popup (appears on top) */
   .popup_text {
     visibility: hidden;
