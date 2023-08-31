@@ -21,7 +21,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftreggs1.github.io%2Fcode-institute-project2%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftreggs1.github.io%2Fcode-institute-project2%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors |
 
 ### CSS
 
@@ -117,7 +117,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home Page | | | | |
 | | Click on Start Game | Starts game generates puzzle output and activates event listeners on letter inputs | Pass | |
 | | Click on Restart Game | Selects random word from array, resets variables to default, removes and reactivates event listeners on letter inputs and resets letter input styles to default | Pass | |
-| | Click Instructions | Brings up instructions popup for the user to read instructions | Pass | User will have thee option to click Exit and close the popup |
+| | Click Instructions | Brings up instructions popup for the user to read instructions | Pass | User will have the option to click Exit and close the popup |
 | | Click Exit on instructions popup | Closes instructions popup and allows user to continue playing the game | Pass | |
 | | Click on letter not in current puzzle | Letter background is changed to red, event listener is removed form that letter, 1 is deducted from guesses remaining and hangman image progresses to next step | Pass | |
 | | Click on letter in current puzzle | Letter background is changed to green, event listener is removed from that letter, letter is reavealed in the correect position or positions if more than one occurence in current puzzle and 1 is deducted for each itteration of that letter in the current puzzle | Pass | |
