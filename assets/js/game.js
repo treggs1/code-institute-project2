@@ -1,7 +1,19 @@
 /*jshint esversion: 6 */ // lets jshint know I am using some ES6 syntax
 
 //Array of the words used in game
-let words = ["testOne", "testTwo", "testThree", "testFour"];
+const words = ["banana", "puzzle", "chance", "guitar", "jacket", 
+"orange", "butter", "saddle", "bottle", "museum", 
+"sister", "planet", "ticket", "window", "pencil", 
+"candle", "rocket", "camera", "forest", "author", 
+"cheese", "design", "shadow", "flower", "biscuit", 
+"quiver", "monkey", "doctor", "laptop", "cousin", 
+"temple", "castle", "turtle", "market", "jumper", 
+"mirror", "purple", "waffle", "racket", "parcel", 
+"basket", "breeze", "pepper", "syrup", "whisky", 
+"diamond", "jigsaw", "jungle", "muffin", "sunset",
+"canada", "paris", "london", "tokyo", "sydney",
+"berlin", "cairo", "moscow", "dublin", "athens",
+"unique", "jazz"];
 
 // game object to contain variables and make it easier to reset everything
 const game = {
