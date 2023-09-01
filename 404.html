@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Challenge your word guessing skills with our interactive Hangman game! 
+    Try to decipher the hidden word by guessing one letter at a time. Avoid the hangman's fate as you unravel the mystery behind each puzzle. 
+    Start playing now and test your vocabulary prowess in this classic word game!">
+    <title>Hangman Puzzle Game</title>
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Import Google Fonts from fonts.google.com -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+3&display=swap" rel="stylesheet">
+    
+    <!-- Favicon's generated at favicon.io  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials">
+</head>
+
+<body>
+    <div class="game_area">
+        <div class="header">
+            <h1>Hangman Puzzle Game</h1>
+        </div>
+        <div class="score"></div>
+        <div class="hangman_image"><img src="assets/images/hangman-10.jpg" width="200" height="350" alt="Hangman game images"></div>
+        <div class="current_word"></div>
+
+        <div class="letters">
+            <div class="lettrs letters_norm">A</div>
+            <div class="lettrs letters_norm">B</div>
+            <div class="lettrs letters_norm">C</div>
+            <div class="lettrs letters_norm">D</div>
+            <div class="lettrs letters_norm">E</div>
+            <div class="lettrs letters_norm">F</div>
+            <div class="lettrs letters_norm">G</div>
+            <div class="lettrs letters_norm">H</div>
+            <div class="lettrs letters_norm">I</div>
+            <div class="lettrs letters_norm">J</div>
+            <div class="lettrs letters_norm">K</div>
+            <div class="lettrs letters_norm">L</div>
+            <div class="lettrs letters_norm">M</div>
+            <div class="lettrs letters_norm">N</div>
+            <div class="lettrs letters_norm">O</div>
+            <div class="lettrs letters_norm">P</div>
+            <div class="lettrs letters_norm">Q</div>
+            <div class="lettrs letters_norm">R</div>
+            <div class="lettrs letters_norm">S</div>
+            <div class="lettrs letters_norm">T</div>
+            <div class="lettrs letters_norm">U</div>
+            <div class="lettrs letters_norm">V</div>
+            <div class="lettrs letters_norm">W</div>
+            <div class="lettrs letters_norm">X</div>
+            <div class="lettrs letters_norm">Y</div>
+            <div class="lettrs letters_norm">Z</div>
+        </div>
+
+        <button class="button">Start Game</button>
+        <button class="instructions" onclick="instructions()">Instructions</button>
+
+        <!-- code for instructions, gameOver and youWin popups -->
+        <div class="popup_instructions" id="instructions">
+            <button class="exit" onclick="instructions()">Exit</button>
+            <h1>Game Instructions</h1>
+
+            <p>
+                <strong>Game Setup:</strong> Click on the start game button at the bottom of the game area to begin
+                the game.
+            </p>
+
+            <p>
+                <strong>Word Puzzle:</strong> The word you need to guess is represented by dashes below the hangman
+                image. Each dash represents a letter in the word. When you guess a correct letter, it will replace
+                the corresponding dash in the word puzzle.
+            </p>
+
+            <p>
+                <strong>Guessing Letters:</strong> To make a guess, click on the letter you want to guess. The
+                letter you clicked will be revealed if it's present in the word. If you guess correctly the box
+                containing the letter will turn green and if your guess is incorrect it will turn red. With each
+                incorrect guess, a part of the
+                hangman's image will be revealed. Your goal is to guess the word before the hangman is fully drawn.
+            </p>
+
+            <p>
+                <strong>Game Progress:</strong> As you guess letters, the number of remaining letters to guess
+                correctly and the number of remaining guesses will be displayed at the top of the screen.
+            </p>
+
+            <p>
+                <strong>Winning:</strong> Continue guessing letters until you've revealed all the letters in the
+                word before running out of guesses. If you guess all the letters correctly before the hangman is
+                fully drawn, you win the game!
+            </p>
+
+            <p>
+                <strong>Losing:</strong> If you run out of guesses before guessing all the letters in the word, the
+                hangman will be fully drawn, and you'll lose the game.
+            </p>
+
+            <p>
+                <strong>Restarting the Game:</strong><br>
+                After a game ends (whether you win or lose), you can start a new game by clicking the "Restart Game"
+                button in the game area or "New Game" button in the popup.
+            </p>
+
+            <p>
+                <strong>New Word:</strong> You can select a new word at any time by clicking the "Restart Game" Button
+                at the bottom of the game area
+            </p>
+
+            <p>
+                <strong>Have Fun:</strong> Enjoy the challenge of guessing words and improving your hangman skills!
+            </p>
+
+            <button class="exit" onclick="instructions()">Exit</button>
+        </div>
+
+        <div class="popup_text" id="game_over">
+        </div>
+
+        <div class="popup_text" id="you_win">
+        </div>
+    </div>
+
+    <!-- Link to game JavaScript -->
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
